@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Transactions</title>
+    <!-- استایل CSS -->
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #1d4ed8;
+            margin-bottom: 20px;
+        }
+        #transaction-btn {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #1d4ed8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        #transaction-btn:hover {
+            background-color: #2563eb;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #4b5563;
+        }
+        .loading {
+            color: #1d4ed8;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Total Transactions on Base</h1>
+    <button id="transaction-btn">Get Transactions</button>
+    <div id="result"></div>
+
+    <!-- اسکریپت -->
+    <script src="frame.js"></script>
+</body>
+</html>
